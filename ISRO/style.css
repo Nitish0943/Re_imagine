@@ -1,56 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(1, 4, 17);
 }
-nav{
-    display: flex;
-    background-color: black;
-    height: 5rem;
-    width: 100%;
-    justify-content:space-between;
-    gap: 3rem;
-    align-items: center;
-    padding: 0 2rem;
-    position: fixed;
-    z-index: 1;
-    
-}
-.logo{
- color: aliceblue;
- font-size: 2rem;
 
-}
-.center-nav a{
-    color: #fff;
-    text-decoration: none;
+.navbar {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-     padding: .4rem;
     
-    
-}
-.search-bar{
-    gap: 5px;
-    height: 200;
-    display: flex;
-    justify-content: flex-end;
-}
- 
-main img{
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 3rem;
+    overflow: hidden;
+    background-color: rgb(1, 4, 19);
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    float: left;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #111;
+  }
+  
+  .dropdown {
+    float: left;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #111;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search {
     float: right;
-    width: 65%;
-    margin-top: 60px;
+    margin-bottom: 2rem;
+  }
+  
+  .search input[type="text"],
+  .search button {
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search input[type="text"] {
+    width: 150px;
+  }
+  
+  .search button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background-color: #45a049;
+  }
 
-}
-main{
 
-    background-color: black;
+.navbar img{
+    height: 3rem;
+    width: 3rem;
+    
 }
+
+
+
